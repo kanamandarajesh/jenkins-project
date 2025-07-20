@@ -72,7 +72,7 @@ pipeline
                 script
                 {
                     sh '''
-                    ssh -i ${SSH_KEY_ID} -o StrictHostKeyChecking=no ${REMOTE_USER}@${REMOTE_HOST} "kubectl apply -f /root/Kubernetes/deploy.yml"
+                    ssh -i ${SSH_KEY_ID} -o StrictHostKeyChecking=no ${REMOTE_USER}@${REMOTE_HOST} "kubectl apply -f /root/Kubernetes/deployment.yml"
                     '''
                 }
             }
